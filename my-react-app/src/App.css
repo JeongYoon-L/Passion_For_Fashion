@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  
+  max-width:360px;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40vmin;   
   pointer-events: none;
 }
 
@@ -28,6 +30,40 @@
   color: #61dafb;
 }
 
+.swiper-container {
+  width: 100%;
+  margin: 40px 0;
+  padding: 45px 0;
+}
+
+.swiper-slide {
+  opacity: 0.4;
+  overflow: hidden;
+  transition: .7s;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.5);
+}
+
+.container{
+  display: block;
+  width: 100vw;
+  height: 56.25vw;
+  max-height: 100vh;
+  max-width: 177.78vh;
+
+  background: black;
+  margin: 0 auto;
+  border: 20px solid #fff;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,4 +72,3 @@
     transform: rotate(360deg);
   }
 }
-
