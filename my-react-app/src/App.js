@@ -38,12 +38,16 @@ const SSwiperSlide = styled(SwiperSlide)`
 
 `;
 
-SwiperCore.use([Navigation, Pagination])
+const SSwiper = styled(Swiper)`
+  max-width:360px;
+`;
+
+SwiperCore.use([Navigation, Pagination]);
 
 function App() {
   return (
     <div className="App"> 
-      <Swiper
+      <SSwiper
         className="banner"
         spaceBetween={50}
         slidesPerView={1}
@@ -65,7 +69,7 @@ function App() {
         <SSwiperSlide>
           <img src={thumb_mumin}></img>
         </SSwiperSlide>
-      </Swiper>
+      </SSwiper>
     </div>
   );
   
