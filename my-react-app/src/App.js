@@ -11,6 +11,7 @@ import thumb_guy from './assets/thumb_guy.jpg'
 import thumb_dog_suit from './assets/126dfdd244674062d9b87a15855105fe.jpg';
 import thumb_dog_wobbling from './assets/633c9a7a98840f7cba6140488b4ad735.gif';
 import thumb_mumin from './assets/50b997ae70f654b97da961eb70016b78.png';
+import DynamicSlides from "./components/DynamicSlides";
 
 
 const SSwiperSlide = styled(SwiperSlide)`
@@ -45,6 +46,13 @@ const SSwiper = styled(Swiper)`
 SwiperCore.use([Navigation, Pagination]);
 
 function App() {
+
+  const createNewSlide = () => {
+    return <SSwiperSlide>
+      <img src={thumb_dog_wobbling}></img>
+    </SSwiperSlide>;
+  }
+
   return (
     <div className="App"> 
       <SSwiper
@@ -53,7 +61,11 @@ function App() {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
+        onSlideChange={createNewSlide}
       >
+        <DynamicSlides />
+
+
         <SSwiperSlide>Slide 1
           <img src={ppap}></img>
         </SSwiperSlide>
