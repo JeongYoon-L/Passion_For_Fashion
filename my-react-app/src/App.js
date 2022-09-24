@@ -23,7 +23,7 @@ function App() {
           <img src = {ppap}></img>
         </SwiperSlide>
         <SwiperSlide>
-        <img src = {thumb_guy}></img>
+          <img src = {thumb_guy}></img>
         </SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
