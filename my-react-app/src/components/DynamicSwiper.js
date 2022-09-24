@@ -16,17 +16,23 @@ import thumb_mumin from '../assets/50b997ae70f654b97da961eb70016b78.png';
 
 const DynamicSwiper = ()  => {
   const [slides, setSlides] = useState(
+      [<SwiperSlide>
+        <img src={ppap}></img>
+      </SwiperSlide>,
       <SwiperSlide>
         <img src={ppap}></img>
-      </SwiperSlide>
+      </SwiperSlide>,
+      
+    ]
     );
 
   const createNewSlide = () => {
-    setSlides(
-      ...slides,
-      <SwiperSlide>
-        <img src={thumb_guy}></img>
-      </SwiperSlide>
+    setSlides( prevSlides => [
+        prevSlides,
+        <SwiperSlide>
+          <img src={thumb_guy}></img>
+        </SwiperSlide>
+      ]
     );
   };
 
@@ -42,7 +48,7 @@ const DynamicSwiper = ()  => {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      onSlideChange={createNewSlide}
+      onSlideChange={()=>{createNewSlide()}}
     >
       {slides}
     </SSwiper>
