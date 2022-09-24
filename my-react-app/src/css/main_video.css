@@ -1,0 +1,90 @@
+/* Balenciaga-Pre-Fall-2021-08 1 */
+
+.photo{
+position: absolute;
+width: 432px;
+height: 926px;
+
+background: url(Balenciaga-Pre-Fall-2021-08.jpg);
+}
+
+/* Price: $640 Link: URLLLL */
+.price{
+position: absolute;
+width: 96px;
+height: 42px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* Line 1 */
+.line1{
+position: absolute;
+width: 70.84px;
+height: 0px;
+
+border: 1px solid #000000;
+transform: rotate(-41.57deg);
+}
+
+/* Price: $1300 Link: URLLLL */
+.price2{
+position: absolute;
+width: 108px;
+height: 49px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* Line 2 */
+.liine{
+position: absolute;
+width: 59.41px;
+height: 0px;
+
+border: 1px solid #000000;
+transform: rotate(-36.1deg);
+}
+
+/* Price: $23000 Link: URLLLL */
+.price2{
+position: absolute;
+width: 142px;
+height: 45px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #000000;
+}
+
+
+/* Line 3 */
+.line3{
+position: absolute;
+width: 56px;
+height: 0px;
+
+border: 1px solid #000000;
+transform: rotate(-90deg);
+}
