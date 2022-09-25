@@ -12,7 +12,7 @@ import objData from '../imgJson.json'; // 얘가 parse까지 다 해줌.
 // import ppap from '../assets/ppap.jpg';
 // import thumb_guy from '../assets/thumb_guy.jpg'
 // import thumb_dog_suit from '../assets/126dfdd244674062d9b87a15855105fe.jpg';
-// import Person1 from '../assets/Person1.jpg';
+import Person1 from '../assets/Person1.jpg';
 // import Person2 from '../assets/Person2.jpg';
 // import Person3 from '../assets/Person3.jpg';
 // import Person4 from '../assets/Person4.jpg';
@@ -34,8 +34,10 @@ import ImgPage from "./ImgPage";
 
 
 const DynamicSwiper = ()  => {
+  const [URLInfo, toggleInfo] = useState(false);
   const keysList = Object.keys(objData);
   const results = [];
+  const results1 = [];
 
   keysList.forEach(function(key, index) {
     const likes = null;
@@ -55,27 +57,84 @@ const DynamicSwiper = ()  => {
       <BottomContainer likes={likesParam}></BottomContainer>
       </SwiperSlide>
     );
+
+    results1.push(
+      <SwiperSlide>
+      <img src={"/assets/"+objData[key][0]} class = "transparent_img" useMap="#tssss"></img>
+        <map name="tssss"  id="tssss">
+          {/* <area 
+            shape="rect" 
+            coords="60, 180, 1279, 1663" 
+            href="https://www.naver.com/" 
+          /> */}
+        </map>
+        
+      <BottomContainer likes={likesParam}></BottomContainer>
+      </SwiperSlide>
+    );
+
+
   });
 
   const SSwiper = styled(Swiper)`
     max-width:360px;
   `;
-  
-  return (
-    <SSwiper
-      className="banner"
-      spaceBetween={30}
-      slidesPerView={1}
-      navigation
-      loop = {true}
-      initialSlide= {2}
-      pagination={{ clickable: true }}
-      zoom={{maxRatio:1.0}}
+    if(URLInfo == false){
+    return (
+      <SSwiper
+        // className="banner"
+        // className = "opening"
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        initialSlide= {2}
 
-    >
-      {results}
-    </SSwiper>
-  );
+        loop = {true}
+
+        onClick={() => toggleInfo(true)}
+        // onSlideChange={()=>{createNewSlide()}}
+      >
+        {results}
+      </SSwiper>
+    );
+
+  }
+  else{
+    return (
+      <SwiperSlide
+        // className="banner"
+        // className = "opening"
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        initialSlide= {2}
+        loop = {true}
+        onClick={() => toggleInfo(false)}
+        // onSlideChange={()=>{createNewSlide()}}
+      >
+        {results1}
+      </SwiperSlide>
+    );
+
+  }
+
+  // return (
+  //   <SSwiper
+  //     className="banner"
+  //     spaceBetween={30}
+  //     slidesPerView={1}
+  //     navigation
+  //     loop = {true}
+  //     initialSlide= {2}
+  //     pagination={{ clickable: true }}
+  //     zoom={{maxRatio:1.0}}
+
+  //   >
+  //     {results}
+  //   </SSwiper>
+  // );
 }
 
 export default DynamicSwiper;
