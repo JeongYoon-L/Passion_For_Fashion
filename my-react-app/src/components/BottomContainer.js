@@ -58,7 +58,7 @@ const BottomContainer = ({imgUrl, likes}) => {
       </div>
       <div>
       <PhotoAction>
-        <FontAwesomeIcon size={"2x"} icon={faBookmark}  onClick={() => window.open('https://www.amazon.com/', '_blank')}/>
+        <FontAwesomeIcon size={"2x"} icon={faBookmark}  onClick={() => window.open('https://www.buckmason.com/products/army-green-baja-twill-field-shirt?variant=39741470769235&utm_source=google&utm_medium=cpc', '_blank')}/>
         </PhotoAction>
       </div>
     </PhotoActions>
