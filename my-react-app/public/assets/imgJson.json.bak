@@ -1,0 +1,59 @@
+{
+	"thumb_VIP": ["vip.jpg", {
+			"143, 250, 226, 293": "https://www.naver.com"
+		}
+	],
+	"01": ["01.jpg", {
+			"113, 88, 175, 98": "https://www.naver.com",
+			"63, 157, 273, 351": "https://www.naver.com",
+			"103, 191, 270, 512": "https://www.naver.com"
+		}
+	],
+	"02": ["02.jpg", {
+			"143, 170, 249, 249": "https://www.naver.com",
+			"134, 46, 253, 236": "https://www.naver.com"
+		}
+	],
+	"04": ["04.jpg", {
+			"176, 90, 302, 227": "https://www.naver.com",
+			"88, 239, 271, 336": "https://www.naver.com"
+		}
+	],
+	"05": ["05.jpg", {
+			"154, 198, 193, 234": "https://www.naver.com",
+			"127, 242, 216, 353": "https://www.naver.com",
+			"136, 148, 191, 243": "https://www.naver.com"
+		}
+	],
+	"06": ["06.jpg", {
+			"118, 190, 221, 208": "https://www.naver.com",
+			"131, 259, 259, 290": "https://www.naver.com"
+		}
+	],
+	"07": ["07.jpg", {
+			"118, 190, 221, 208": "https://www.naver.com",
+			"131, 259, 259, 290": "https://www.naver.com"
+		}
+	],
+	"08": ["08.jpg", {
+			"134, 123, 234, 216": "https://www.naver.com",
+			"136, 77, 199, 302": "https://www.naver.com",
+			"101, 42, 132, 133": "https://www.naver.com"
+		}
+	],
+	"09": ["09.jpg", {
+			"80, 221, 290, 331": "https://www.naver.com",
+			"195, 146, 209, 158": "https://www.naver.com"
+		}
+	],
+	"10": ["10.jpg", {
+			"101, 180, 270, 324": "https://www.naver.com"
+		}
+	],
+	"11": ["11.jpg", {
+			"178, 204, 203, 246": "https://www.naver.com",
+			"205, 208, 262, 287": "https://www.naver.com",
+			"182, 292, 253, 382": "https://www.naver.com"
+		}
+	]
+}
