@@ -11,18 +11,30 @@ import styled from "styled-components";
 import ppap from '../assets/ppap.jpg';
 import thumb_guy from '../assets/thumb_guy.jpg'
 import thumb_dog_suit from '../assets/126dfdd244674062d9b87a15855105fe.jpg';
-import thumb_dog_wobbling from '../assets/633c9a7a98840f7cba6140488b4ad735.gif';
-import thumb_mumin from '../assets/50b997ae70f654b97da961eb70016b78.png';
+import Person1 from '../assets/Person1.jpg';
+import Person2 from '../assets/Person2.jpg';
+import Person3 from '../assets/Person3.jpg';
+import Person4 from '../assets/Person4.jpg';
+import Person5 from '../assets/Person5.jpg';
 
 const DynamicSwiper = ()  => {
   const [slides, setSlides] = useState(
       [<SwiperSlide>
-        <img src={ppap}></img>
+        <img src={Person3}></img>
       </SwiperSlide>,
       <SwiperSlide>
-        <img src={ppap}></img>
+        <img src={Person2}></img>
       </SwiperSlide>,
-      
+      <SwiperSlide>
+      <img src={Person1}></img>
+      </SwiperSlide>,
+      <SwiperSlide>
+      <img src={Person4}></img>
+      </SwiperSlide>,
+      <SwiperSlide>
+      <img src={Person5}></img>
+      </SwiperSlide>,
+
     ]
     );
 
@@ -48,7 +60,8 @@ const DynamicSwiper = ()  => {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      onSlideChange={()=>{createNewSlide()}}
+      initialSlide= {2}
+      // onSlideChange={()=>{createNewSlide()}}
     >
       {slides}
     </SSwiper>
