@@ -53,17 +53,22 @@ const DynamicSwiper = ()  => {
 
   const SSwiper = styled(Swiper)`
     max-width:360px;
+    
   `;
   
   if(URLInfo == false){
     return (
       <SSwiper
-        className="banner"
+        // className="banner"
+        className = "opening"
         spaceBetween={50}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         initialSlide= {2}
+
+        loop = {true}
+
         onClick={() => toggleInfo(true)}
         // onSlideChange={()=>{createNewSlide()}}
       >
@@ -75,12 +80,14 @@ const DynamicSwiper = ()  => {
   else{
     return (
       <SwiperSlide
-        className="banner"
+        // className="banner"
+        className = "opening"
         spaceBetween={50}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         initialSlide= {2}
+        loop = {true}
         onClick={() => toggleInfo(false)}
         // onSlideChange={()=>{createNewSlide()}}
       >

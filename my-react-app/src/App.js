@@ -8,6 +8,7 @@ import { useState } from "react";
 
 import './App.css';
 import final_opening from './assets/final_opening.gif'
+import final_opening1 from './assets/final_opening1.gif'
 import ppap from './assets/ppap.jpg'
 import thumb_guy from './assets/thumb_guy.jpg'
 import thumb_dog_suit from './assets/126dfdd244674062d9b87a15855105fe.jpg';
@@ -38,7 +39,7 @@ function App() {
         
         // onSlideChange={()=>{createNewSlide()}}
       >
-        <img src={final_opening} className="opening"
+        <img src={final_opening1} className="opening"
         onClick={() => toggleOpening(true)}
         ></img>
       </SSwiper>
