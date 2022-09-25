@@ -17,7 +17,10 @@ import Person3 from '../assets/Person3.jpg';
 import Person4 from '../assets/Person4.jpg';
 import Person5 from '../assets/Person5.jpg';
 
+
 const DynamicSwiper = ()  => {
+  const [URLInfo, toggleInfo] = useState(false);
+
   const [slides, setSlides] = useState(
       [<SwiperSlide>
         <img src={Person3}></img>
@@ -52,20 +55,43 @@ const DynamicSwiper = ()  => {
     max-width:360px;
   `;
   
+  if(URLInfo == false){
+    return (
+      <SSwiper
+        className="banner"
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        initialSlide= {2}
+        onClick={() => toggleInfo(true)}
+        // onSlideChange={()=>{createNewSlide()}}
+      >
+        {slides}
+      </SSwiper>
+    );
 
-  return (
-    <SSwiper
-      className="banner"
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      initialSlide= {2}
-      // onSlideChange={()=>{createNewSlide()}}
-    >
-      {slides}
-    </SSwiper>
-  );
+  }
+  else{
+    return (
+      <SwiperSlide
+        className="banner"
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        initialSlide= {2}
+        onClick={() => toggleInfo(false)}
+        // onSlideChange={()=>{createNewSlide()}}
+      >
+        <img src={Person1} class = "transparent_img"></img>
+      </SwiperSlide>
+    );
+
+  }
+
+
+  
 }
 
 export default DynamicSwiper;
