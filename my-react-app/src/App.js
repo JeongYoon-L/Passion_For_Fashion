@@ -8,13 +8,14 @@ import { useState } from "react";
 
 import './App.css';
 
-import final_opening from './assets/final_opening.gif'
-import final_opening1 from './assets/final_opening1.gif'
-import ppap from './assets/ppap.jpg'
-import thumb_guy from './assets/thumb_guy.jpg'
-import thumb_dog_suit from './assets/126dfdd244674062d9b87a15855105fe.jpg';
-import thumb_dog_wobbling from './assets/633c9a7a98840f7cba6140488b4ad735.gif';
-import thumb_mumin from './assets/50b997ae70f654b97da961eb70016b78.png';
+// import final_opening from './assets/final_opening.gif';
+import final_opening1 from './assets/final_opening1.gif';
+import final_opening2 from './assets/final_opening2.gif';
+// import ppap from './assets/ppap.jpg';
+// import thumb_guy from './assets/thumb_guy.jpg';
+// import thumb_dog_suit from './assets/126dfdd244674062d9b87a15855105fe.jpg';
+// import thumb_dog_wobbling from './assets/633c9a7a98840f7cba6140488b4ad735.gif';
+// import thumb_mumin from './assets/50b997ae70f654b97da961eb70016b78.png';
 import DynamicSwiper from "./components/DynamicSwiper";
 
 
@@ -40,7 +41,7 @@ function App() {
         
         // onSlideChange={()=>{createNewSlide()}}
       >
-        <img src={final_opening1} className="opening"
+        <img src={final_opening2} className="opening"
         onClick={() => toggleOpening(true)}
         ></img>
       </SSwiper>
