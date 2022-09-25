@@ -1,3 +1,8 @@
+//
+//Referenced by
+//https://github.com/nomadcoders/instaclone-web
+//
+
 import { Button } from "@mui/material";
 
 import { faBookmark, faComment, faHeart, faPaperPlane, faThumbsUp, faBell, faThumbsDown } from "@fortawesome/free-regular-svg-icons";
@@ -43,13 +48,18 @@ const BottomContainer = ({imgUrl, likes}) => {
         </PhotoAction>
         <PhotoAction>
           <FontAwesomeIcon size={"2x"} icon={faHeart} />
+          <div>
+            105200
+          </div>
         </PhotoAction>
         <PhotoAction>
           <FontAwesomeIcon size={"2x"} icon={faThumbsDown} />
         </PhotoAction>
       </div>
       <div>
-        <FontAwesomeIcon size={"2x"} icon={faBookmark} />
+      <PhotoAction>
+        <FontAwesomeIcon size={"2x"} icon={faBookmark}  onClick={() => window.open('https://www.amazon.com/', '_blank')}/>
+        </PhotoAction>
       </div>
     </PhotoActions>
     <Likes>{likes === 1 ? "1 Like" : `${likes} Likes`}</Likes>
@@ -57,8 +67,3 @@ const BottomContainer = ({imgUrl, likes}) => {
 }
 
 export default BottomContainer;
-// 상단에 메뉴로 가는 버튼, 
-// 좋(r)/싫(l), 
-// 좋아요 개수,
-// 좋아요 애니메이션
-// 우측하단 onclick 시 사진 출력, 특정 부위 클릭 시 URL 이동.
