@@ -60,7 +60,7 @@ const DynamicSwiper = ()  => {
     return (
       <SSwiper
         // className="banner"
-        className = "opening"
+        // className = "opening"
         spaceBetween={50}
         slidesPerView={1}
         navigation
@@ -81,7 +81,7 @@ const DynamicSwiper = ()  => {
     return (
       <SwiperSlide
         // className="banner"
-        className = "opening"
+        // className = "opening"
         spaceBetween={50}
         slidesPerView={1}
         navigation
