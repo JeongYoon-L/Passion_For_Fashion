@@ -16,6 +16,19 @@ import Person2 from '../assets/Person2.jpg';
 import Person3 from '../assets/Person3.jpg';
 import Person4 from '../assets/Person4.jpg';
 import Person5 from '../assets/Person5.jpg';
+import thumb_VIP from "../assets/VIP.jpg"
+import thumb_01 from "../assets/01.jpg"
+import thumb_02 from "../assets/02.jpg"
+import thumb_04 from "../assets/04.jpg"
+import thumb_05 from "../assets/05.jpg"
+import thumb_06 from "../assets/06.jpg"
+import thumb_07 from "../assets/07.jpg"
+import thumb_08 from "../assets/08.jpg"
+import thumb_09 from "../assets/09.jpg"
+import thumb_10 from "../assets/10.jpg"
+import thumb_11 from "../assets/11.jpg"
+
+import ImgPage from "./ImgPage";
 
 
 const DynamicSwiper = ()  => {
@@ -25,6 +38,7 @@ const DynamicSwiper = ()  => {
       [<SwiperSlide>
         <img src={Person3}></img>
       </SwiperSlide>,
+
       <SwiperSlide>
         <img src={Person2}></img>
       </SwiperSlide>,
@@ -45,7 +59,7 @@ const DynamicSwiper = ()  => {
     setSlides( prevSlides => [
         prevSlides,
         <SwiperSlide>
-          <img src={thumb_guy}></img>
+          <ImgPage imgUrl={thumb_mumin}> </ImgPage>
         </SwiperSlide>
       ]
     );

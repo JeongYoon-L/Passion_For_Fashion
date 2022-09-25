@@ -7,6 +7,7 @@ import styled from "styled-components";
 import { useState } from "react";
 
 import './App.css';
+
 import final_opening from './assets/final_opening.gif'
 import final_opening1 from './assets/final_opening1.gif'
 import ppap from './assets/ppap.jpg'
